@@ -1,85 +1,1204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profie</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim's Corner</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1 id="name">TIMOTHY CHEN</h1>
-    <span id="contactinfo"><img src="Mail.png"> chent61@mcmaster.ca</span>
-    <span id="contactinfo"><img src="Phone.png">(905) 903-8586</span>
-    <span id="contactinfo"><img src="Linkedin.png">linkedin.com/in/chent61</span>
-    <span id="contactinfo"><img src="Git.png">github.com/chent61</span>
 
-    <div id="summary">
-        <h2 id="sec">Summary</h2>
-        <ul>
-            <li>3rd year Software Engineering & Management student; experienced in <b>Python</b>, <b>Java</b> and <b>Swift</b></li>
-            <li>Currently developing knowledge on <b>Web Development</b>, <b>SQL</b> and <b>Machine Learning</b> through online resources</li>
-            <li>Interested in becoming an innovative developer, solving common problems in our everyday lives</li>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profilePicture.jpeg" alt="Timothy Chen" width="80" id="profilePicture">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Timothy Chen">Timothy Chen</h1>
+
+          <p class="title">Software Engineering Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <a class="icon-box icon-btn" a href="mailto:chent61@mcmaster.ca">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:chent61@mcmaster.ca" class="contact-link">chent61@mcmaster.ca</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <a class="icon-box icon-btn" href="https://www.linkedin.com/in/chent61/" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/chent61/" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/chent61</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <a class="icon-box icon-btn" href="https://github.com/chent61" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/chent61" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/chent61</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Toronto, Ontario, Canada</address>
+            </div>
+
+          </li>
+
         </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="assets/Timothy_Chen_Resume2023.2.0.pdf" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon id="file" name="document-outline"></ion-icon>
+              <span id="resumeFile" >My Resume</span>
+            </a>
+            
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="projects">Projects</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article>
+        <div class="about" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi &#128075;&#127995;, I'm Timothy, a <b>passionate foodie</b> and <b>adventurer</b> with a desire to explore new horizons. 
+            I'm also an <b>avid learner</b> and a dedicated <b>problem solver</b> who enjoys diving into challenges and seeking innovative solutions. 
+          </p>
+
+          <p>
+            Currently, I am a student studying <b>Software Engineering and Management at McMaster University</b>. 
+            I'm about to finish my final semester and will graduate in <b>December 2023</b> &#127891;. 
+            I am eagerly preparing to embark on my next journey in the field, fueled by the desire to learn from everyone I meet and to grow as a person.
+          </p>
+
+          <p>
+            When I'm not in school, coding, or exploring the world of software engineering, you can find me doing a variety of activities that help to balance my life.
+            I enjoy spending time with friends, whether online or in person, connecting with new people, exploring new food places, and staying active through physical activities like weightlifting and sports.
+            When I am not out, I am probably immersed in shows or animes like One Piece or I'm probably gaming alone or with friends on games like League of Legends.
+            I have an passion for travelling both to new destinations and revisiting familiar ones, with a particular fondness for Taiwan due to my cultural background and delightful cuisine it offers.
+          </p>
+
+          <p>
+            Keep scrolling to see my experiences and what I have been up to &#128522;.
+          </p>
+        </section>
+      </div>
+
+        <div class="resume" data-page="resume">
+        <header >
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">McMaster University</h4>
+
+              <span>September 2017 — December 2023 (Expected)</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering and Management in Software Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sinclair Secondary School</h4>
+
+              <span>September 2013 — June 2017</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Developer | Royal Bank of Canada</h4>
+
+              <span>January 2022 — December 2022</span>
+              
+              <div class="description">
+              <p class="timeline-text">
+                &emsp; I had the opportunity to work on an innovation team within the network infrastructure division. 
+                My responsibilities were primarily focused on improving our network chatbot that returns statuses or data based on the users' requests. 
+                I started off by resolving errors and finding bugs within the chatbot, then quickly took on the task of enhancing the chatbot's ability to understand the user's request in natural language. 
+                This was done through extensive research and prototyping of a NLU framework called RASA. Working independently, I presented my findings and made constant improvements based on feedback from my directors, managers, and co-workers.
+                 As a result, a prototype NLU model was successfully implemented into the chatbot and is now being used by over 100 active users.
+                 <br />
+                 <br />
+                 &emsp; Overall, it was a great learning experience.
+                 I had the privilege of learning various new concepts and technologies that I may not have otherwise encountered. 
+                 I learned the most, especially from my one-on-one meetings with my mentor, where he talked about many different topics, which helped me broaden my knowledge and understanding in many areas.
+                 
+                </p>
+                <br />
+            </div>
+            <button class="dropdown-button">Description  ▼</button>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Teaching Assistant | McMaster University</h4>
+
+              <span>September 2021 — December 2021</span>
+
+              <div class="description">
+                <p class="timeline-text">
+                  &emsp; One of my most enjoyable experiences was having the pleasure of serving as a teaching assistant during my time at school. 
+                  I have a passion for teaching. I was a tutor for high school students for many years, and seeing students' faces light up when they understand a concept is very rewarding.
+                   What made this experience even more enjoyable was the fact that I had the opportunity to teach a subject that I personally found fascinating: concurrent programming. 
+                   Throughout the semester, I organised four engaging tutorials that focused on imparting knowledge about concurrent programming, emphasising optimising benefits, and preventing race conditions. 
+                   Additionally, I was responsible for grading and offering feedback on over 300 assignments and exams, assessing students' grasp of essential theories and techniques from the course. 
+                   To further enrich their learning experience, assignments and exams were crafted in various languages, including Python, Java, C, and Golang. 
+                   Being able to contribute to students' growth and witness their progress was incredibly gratifying.
+                  <br />
+                </p>
+                <br />
+              </div>
+              <button class="dropdown-button">Description  ▼</button>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical System Analyst | Royal Bank of Canada</h4>
+
+              <span>May 2021 — August 2021</span>
+
+              <div class="description">
+                <p class="timeline-text">
+                  &emsp; One of my most enjoyable experiences was having the pleasure of serving as a teaching assistant during my time at school. 
+                  I have a passion for teaching. I was a tutor for high school students for many years, and seeing students' faces light up when they understand a concept is very rewarding.
+                   What made this experience even more enjoyable was the fact that I had the opportunity to teach a subject that I personally found fascinating: concurrent programming. 
+                   Throughout the semester, I organised four engaging tutorials that focused on imparting knowledge about concurrent programming, emphasising optimising benefits, and preventing race conditions. 
+                   Additionally, I was responsible for grading and offering feedback on over 300 assignments and exams, assessing students' grasp of essential theories and techniques from the course. 
+                   To further enrich their learning experience, assignments and exams were crafted in various languages, including Python, Java, C, and Golang. 
+                   Being able to contribute to students' growth and witness their progress was incredibly gratifying.
+                  <br />
+                </p>
+                <br />
+              </div>
+              <button class="dropdown-button">Description  ▼</button>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Automation Developer | Nokia</h4>
+
+              <span>May 2020 - August 2020</span>
+
+              <div class="description">
+                <p class="timeline-text">
+                  &emsp; One of my most enjoyable experiences was having the pleasure of serving as a teaching assistant during my time at school. 
+                  I have a passion for teaching. I was a tutor for high school students for many years, and seeing students' faces light up when they understand a concept is very rewarding.
+                   What made this experience even more enjoyable was the fact that I had the opportunity to teach a subject that I personally found fascinating: concurrent programming. 
+                   Throughout the semester, I organised four engaging tutorials that focused on imparting knowledge about concurrent programming, emphasising optimising benefits, and preventing race conditions. 
+                   Additionally, I was responsible for grading and offering feedback on over 300 assignments and exams, assessing students' grasp of essential theories and techniques from the course. 
+                   To further enrich their learning experience, assignments and exams were crafted in various languages, including Python, Java, C, and Golang. 
+                   Being able to contribute to students' growth and witness their progress was incredibly gratifying.
+                  <br />
+                </p>
+                <br />
+              </div>
+              <button class="dropdown-button">Description  ▼</button>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Application Developer | Beth Tikvah</h4>
+
+              <span>January 2020 - April 2020</span>
+
+              <div class="description">
+                <p class="timeline-text">
+                  &emsp; One of my most enjoyable experiences was having the pleasure of serving as a teaching assistant during my time at school. 
+                  I have a passion for teaching. I was a tutor for high school students for many years, and seeing students' faces light up when they understand a concept is very rewarding.
+                   What made this experience even more enjoyable was the fact that I had the opportunity to teach a subject that I personally found fascinating: concurrent programming. 
+                   Throughout the semester, I organised four engaging tutorials that focused on imparting knowledge about concurrent programming, emphasising optimising benefits, and preventing race conditions. 
+                   Additionally, I was responsible for grading and offering feedback on over 300 assignments and exams, assessing students' grasp of essential theories and techniques from the course. 
+                   To further enrich their learning experience, assignments and exams were crafted in various languages, including Python, Java, C, and Golang. 
+                   Being able to contribute to students' growth and witness their progress was incredibly gratifying.
+                  <br />
+                </p>
+                <br />
+              </div>
+              <button class="dropdown-button">Description  ▼</button>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quality Assurance Test Analyst | Canadian Imperial Bank of Commerce</h4>
+
+              <span>May 2019 — December 2019</span>
+
+              <div class="description">
+                <p class="timeline-text">
+                  &emsp; One of my most enjoyable experiences was having the pleasure of serving as a teaching assistant during my time at school. 
+                  I have a passion for teaching. I was a tutor for high school students for many years, and seeing students' faces light up when they understand a concept is very rewarding.
+                   What made this experience even more enjoyable was the fact that I had the opportunity to teach a subject that I personally found fascinating: concurrent programming. 
+                   Throughout the semester, I organised four engaging tutorials that focused on imparting knowledge about concurrent programming, emphasising optimising benefits, and preventing race conditions. 
+                   Additionally, I was responsible for grading and offering feedback on over 300 assignments and exams, assessing students' grasp of essential theories and techniques from the course. 
+                   To further enrich their learning experience, assignments and exams were crafted in various languages, including Python, Java, C, and Golang. 
+                   Being able to contribute to students' growth and witness their progress was incredibly gratifying.
+                  <br />
+                </p>
+                <br />
+              </div>
+              <button class="dropdown-button">Description  ▼</button>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <ul class="skills-list">
+                  <li class="skill-pill">HTML</li>
+                  <li class="skill-pill">CSS</li>
+                  <li class="skill-pill">JavaScript</li>
+                  <li class="skill-pill">Python</li>
+                  <!-- Add more skills as needed -->
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Branding</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+          </div>
+
+          <div class="projects" data-page="projects">
+            <header>
+              <h2 class="h2 article-title">Projects</h2>
+            </header>
+
+            <section class="projects">
+
+              <!-- <ul class="filter-list">
+    
+                <li class="filter-item">
+                  <button class="active" data-filter-btn>All</button>
+                </li>
+    
+                <li class="filter-item">
+                  <button data-filter-btn>Web design</button>
+                </li>
+    
+                <li class="filter-item">
+                  <button data-filter-btn>Applications</button>
+                </li>
+    
+                <li class="filter-item">
+                  <button data-filter-btn>Web development</button>
+                </li>
+    
+              </ul> -->
+    
+              <!-- <div class="filter-select-box">
+    
+                <button class="filter-select" data-select>
+    
+                  <div class="select-value" data-selecct-value>Select category</div>
+    
+                  <div class="select-icon">
+                    <ion-icon name="chevron-down"></ion-icon>
+                  </div>
+    
+                </button>
+    
+                <ul class="select-list">
+    
+                  <li class="select-item">
+                    <button data-select-item>All</button>
+                  </li>
+    
+                  <li class="select-item">
+                    <button data-select-item>Web design</button>
+                  </li>
+    
+                  <li class="select-item">
+                    <button data-select-item>Applications</button>
+                  </li>
+    
+                  <li class="select-item">
+                    <button data-select-item>Web development</button>
+                  </li>
+    
+                </ul>
+    
+              </div> -->
+    
+              <ul class="project-list">
+    
+                <li class="project-item  active" data-filter-item data-category="web development">
+             
+    
+                    <figure class="project-img">
+
+    
+                      <img src="./assets/images/wip-black.png" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Work in Progress</h3>
+                </li>
+    
+                <!-- <li class="project-item  active" data-filter-item data-category="web development">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/work-in-process.jpeg" alt="orizon" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Orizon</h3>
+    
+                    <p class="project-category">Web development</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="web design">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Fundo</h3>
+    
+                    <p class="project-category">Web design</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="applications">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Brawlhalla</h3>
+    
+                    <p class="project-category">Applications</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="web design">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">DSM.</h3>
+    
+                    <p class="project-category">Web design</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="web design">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">MetaSpark</h3>
+    
+                    <p class="project-category">Web design</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="web development">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Summary</h3>
+    
+                    <p class="project-category">Web development</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="applications">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Task Manager</h3>
+    
+                    <p class="project-category">Applications</p>
+    
+                  </a>
+                </li>
+    
+                <li class="project-item  active" data-filter-item data-category="web development">
+                  <a href="#">
+    
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+    
+                      <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                    </figure>
+    
+                    <h3 class="project-title">Arrival</h3>
+    
+                    <p class="project-category">Web development</p>
+    
+                  </a>
+                </li>
+     -->
+              </ul>
+    
+            </section>
+    
+          </div>
+
+  
+        </section>
+
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+<!-- 
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+<!-- 
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+
     </div>
 
-    <div id="experience">
-        <h2 id="sec">Experience</h2>
-        <h3>CIBC Wealth Management · Toronto, Canada <span id="date">May 2019 to December 2019</span></h3> 
-        <h4>QA Test Analyst · Environment/Data & Innovation Skunkworks Team</h4>
-        <ul>
-            <li>Scheduled 50+ deployments, created 90+ change records and managed environment distribution for all environments</li>
-            <li>Assisted on an <b>agile</b> innovation team producing internal networking/job posting website and creating AR banking guide</li>
-            <li>Proactively developed a Marco script to automate test data creation and minimize human error by 80%</li>
-            <li>Individually designed a code tracking template, using <b>Excel</b>, to effectively track application versions on environments </li>
-            <li>Completed 30+ manual test cases and assisted in automating regression testing using <b>Selenium</b></li>
-            <li>Used <b>Bitbucket</b> for version control and <b>JIRA</b> & <b>Congluence</b> for backlogging and tracking story progress</li>
-        </ul>
+  </main>
 
-        <h3>Foxconn · Taiwan, Taipei <span id="date">August 2017</span></h3> 
-        <h4>QA Tester</h4>
-        <ul>
-            <li>Manually tested each prototype smart home device, designed for home security, efficiency and power saving</li>
-            <li>Created and executed test plans for functionality, reliability and accuracy on all platform of devices </li>
-            <li>Performed daily <b>regression testing</b> on Bluetooth connectivity, helped identify 10 + software bugs </li>
-        </ul>
-    </div>
 
-    <div id="projects">
-        <h2 id="sec">Projects</h2>
-        <h3>Scheduler · Hamilton, Canada  <span id="date">January 2020 to April 2020</span></h3> 
-        <h4>Developer</h4>
-        <ul>
-            <li>Developed an algorithm to assist an agency in automating the scheduling process and reduce incorrect data entries </li>
-            <li>Coded the application using <b>VBA</b>, created a <b>Macro</b> in Excel to generate the schedule based on given staff availability  </li>
-        </ul>
 
-        <h3>EzHealth · Hamilton, Canada<span id="date">March 2019 to April 2019</span></h3> 
-        <h4>Developer</h4>
-        <ul>
-            <li>Application Prototype designed to find healthy food options at a cheaper price by generating a shopping list for the user</li>
-            <li>Programmed an edge-weighted digraph, utilizing a longest path algorithm to produce results with a wider variety</li>
-        </ul>
 
-        <h3>Haven · YHack · New Haven, United States <span id="date">December 2018</span></h3> 
-        <h4>Front-End Support</h4>
-        <ul>
-            <li>Designed a prototype social media platform, aimed to improve the positivity in sociality and decrease mental illness rates</li>
-            <li>Used Google and Monkey Learning API to censor and block negative posts and messages from being published</li>
-        </ul>
-    </div>
 
-    <div id="skills">
-        <h2 id="sec">Skills</h2>
-        <p><b>Languages:</b> C, C++, Java, Python, VBA, HTML, CSS, JavaScript, Bash, Swift, SQL, UNIX</p>
-        <p><b>Platforms:</b> Visual Studio Code, Eclipse, Git, BitBucket, Confluence, JIRA, UFT, Excel, XCode</p>
-    </div>
 
-    <div id="education">
-        <h2 id="sec">Education</h2>
-        <h3>McMaster University · Bachelor of Engineering <span id="date">September 2017 to Present</span></h3>
-        <p>Software Engineering and Management</p>
-        <p>Expected Graduation: April 2022</p>
-        <p>GPA: 3.4/4.0</p>
-        <p>Relevant Courses: Data Structure & Algorithms, Computer Architecture, Principles of Programming </p>
-    </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>

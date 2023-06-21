@@ -968,6 +968,22 @@ main {
   background-color: #627AD1;
 }
 
+.credit-section {
+
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+.credit-section p {
+  color: #424040;
+  text-decoration: none;
+}
+
+.credit-section a:hover {
+  text-decoration: underline;
+}
 
 
 
